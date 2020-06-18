@@ -10,14 +10,17 @@
     "start": "nuxt start",
     "generate": "nuxt generate",
     "styleguide": "vue-styleguidist server --config styleguide/styleguide.config.js",
-    "styleguide:build": "vue-styleguidist build --config styleguide/styleguide.config.js"
+    "styleguide:build": "vue-styleguidist build --config styleguide/styleguide.config.js",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
-    "nuxt": "^2.3.4"
+    "nuxt": "^2.3.4",
+    "snyk": "^1.345.1"
   },
   "devDependencies": {
     "@babel/core": "^7.2.2",
-    "@babel/preset-env":"^7.3.1",
+    "@babel/preset-env": "^7.3.1",
     "@babel/plugin-transform-runtime": "^7.2.0",
     "babel-core": "^7.0.0-bridge.0",
     "css-loader": "^0.28.7",
@@ -28,5 +31,6 @@
     "vue-loader": "^15.2.4",
     "vue-styleguidist": "^3.0.9",
     "webpack": "^4.10.0"
-  }
+  },
+  "snyk": true
 }
