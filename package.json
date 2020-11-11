@@ -73,7 +73,7 @@
     "react-dev-utils": "^7.0.3",
     "react-dom": "^16.4.1",
     "react-group": "^1.0.6",
-    "react-styleguidist": "^8.0.4",
+    "react-styleguidist": "^11.1.2",
     "strip-comments": "^0.4.4",
     "style-loader": "^0.21.0",
     "to-ast": "^1.0.0",
